@@ -1,13 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mini Ecommerce</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    
+
+  <header>
+    <div class="header-inner">
+      <div class="logo">⚡ TechStore</div>
+      <span class="tagline">Catálogo de Produtos</span>
+    </div>
+  </header>
+
+  <main>
+    <!-- Controles de busca e filtro -->
+    <section class="controls">
+      <div class="search-wrap">
+        <span class="search-icon">🔍</span>
+        <input
+          type="text"
+          id="search"
+          placeholder="Buscar produto..."
+          autocomplete="off"
+        />
+      </div>
+
+      <select id="category">
+        <option value="">Todas</option>
+      </select>
+
+      <button id="btnRender">↺ Renderizar</button>
+    </section>
+
+    <!-- Lista de produtos -->
+    <section id="product-list"></section>
+
+    <!-- Detalhes do produto -->
+    <section id="product-details"></section>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
